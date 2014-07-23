@@ -10,9 +10,9 @@
 <div class="container">
 	<article class="row portfolio-item" ng-repeat="item in portfolio">		
 		<div class="col-md-8 col-xs-12">
-		<a class="image-link middle" ng-click="showInModal()" href="/app/data/content_img/big/{{item.poster}}" ><img ng-src="/app/data/content_img/middle/{{item.poster}}" height="160" width="340" alt="{{item.name}}" /></a>
+		<a class="image-link middle" ng-click="showInModal()" data-link="/app/data/content_img/big/{{item.poster}}" ><img ng-src="/app/data/content_img/middle/{{item.poster}}" height="160" width="340" alt="{{item.name}}" /></a>
 		<br />
-		<a ng-repeat="image in item.images" ng-click="showInModal()" class="image-link" href="/app/data/content_img/big/{{image}}" bs-modal ><img ng-src="/app/data/content_img/tmbls/{{image}}" height="160" width="160" alt="{{item.name}}" /></a>
+		<a ng-repeat="image in item.images" ng-click="showInModal()" class="image-link" data-link="/app/data/content_img/big/{{image}}"><img ng-src="/app/data/content_img/tmbls/{{image}}" height="160" width="160" alt="{{item.name}}" /></a>
 		</div>
 		
 		<div class="col-md-4 col-xs-12">

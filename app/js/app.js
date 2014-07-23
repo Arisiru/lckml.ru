@@ -2,6 +2,7 @@
 
 angular.module('luckyApp', [
   'ngRoute',
+  'mgcrea.ngStrap',
   'luckyApp.directives',
   'luckyApp.controllers'
   //'myApp.filters',

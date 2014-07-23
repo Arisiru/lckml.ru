@@ -8,8 +8,9 @@ angular.module('luckyApp.controllers', [])
   }])
   .controller('PortfolioCtrl', ['$scope', '$modal', function($scope, $modal) {
     $scope.showInModal = function() {
-		console.log(arguments);
-		var myModal = $modal({title: 'My Title', content: 'My Content', show: true});
+		var template = '<div class="modal" tabindex="-1" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="modal-header" ng-show="title"><button type="button" class="close" ng-click="$hide()">&times;</button><h4 class="modal-title" ng-bind="title"></h4></div><div class="modal-body" ng-bind="content"></div><div class="modal-footer"><button type="button" class="btn btn-default" ng-click="$hide()">Close</button></div></div></div></div>'
+		var myModal = $modal({content: 'My Content', show: true});
+
 	}
     $scope.portfolio = [
 		{
