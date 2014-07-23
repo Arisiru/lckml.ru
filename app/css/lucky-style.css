@@ -11,6 +11,25 @@ body {
   -moz-background-size: cover;
   background-size: cover;
 }
+a,
+a:hover {
+  color:  #518def;
+}
+.image-link {
+  display:inline-block;
+  padding:8px;
+  margin:4px 2px;
+  height:176px;
+  width:176px;
+  background:url(../img/bg-hover.png) 0 0 repeat;
+}
+.image-link.middle {
+  height:176px;
+  width:356px;
+}
+.image-link:hover {
+  background:url(../img/bg-hover-img.png) 0 0 repeat;
+}
 /* Header */
 #page-header {
   padding-bottom:20px 0 0;
@@ -136,7 +155,7 @@ body {
 .slider-box:hover .slide-next {
   display:block;
 }
-/* Nav .home-nav-element */
+/* Home Nav */
 .home-nav{
   padding: 30px 0 0 !important;
 }
@@ -168,7 +187,36 @@ a.home-nav-wrapper {
   color: #000;
   text-decoration: none;
 }
-
+/* Portfolio */
+.portfolio-item {
+  padding:20px 0;
+  border-top:#bbb 1px solid
+}
+.portfolio-item:first-child {
+  border-top:none
+}
+.portfolio-title {
+  color:#518def;
+  font-size:1.5em;
+  line-height:1.2em;
+  text-transform:uppercase;
+  letter-spacing:-1px;
+}
+.portfolio-subtitle {
+  color:#000;
+  font-size:1.2em;
+  line-height:1.5em;
+}
+.portfolio-description {
+  font-size:1.0em;
+  line-height:1.5em;
+}
+.portfolio-description p {
+  margin:0 0 15px
+}
+#portfolioBox .description strong{margin:10px 0 0;font-size:1.1em;font-weight:bold}
+#portfolioBox .description ul{list-style-type:square;list-style-position:inside;color:#518def}
+#portfolioBox .description ul li{color:#000;}
 /* Footer */
 #page-footer {
   background:url(../img/bg-hover.png) 0 0 repeat;
@@ -218,20 +266,7 @@ legend{font-size:1.1em;color:#518def}
 .inp input.error_input{background:#ec9da0}
 .inp textarea{height:165px;width:465px;resize:none;border:none;margin:4px 0 0 2px}
 .btn  input:hover{cursor:pointer}*/
-/* Portfolio 
-#portfolioBox {padding:20px 0 0}
-#portfolioBox article{padding:20px 0;border-bottom:#bbb 1px solid}
-#portfolioBox article:last-child{border-bottom:none}
-#portfolioBox h2.title{color:#518def;font-size:1.5em;line-height:1.2em;text-transform:uppercase;letter-spacing:-1px;}
-#portfolioBox h3.subtitle{color:#000;font-size:1.2em;line-height:1.5em;}
-#portfolioBox .description{font-size:1.0em;line-height:1.5em;}
-#portfolioBox .description p{margin:0 0 15px}
-#portfolioBox .leftFloat {width:550px;}
-#portfolioBox .leftFloat  a{margin:0 auto}
-#portfolioBox .rightFloat {width:440px}
-#portfolioBox .description strong{margin:10px 0 0;font-size:1.1em;font-weight:bold}
-#portfolioBox .description ul{list-style-type:square;list-style-position:inside;color:#518def}
-#portfolioBox .description ul li{color:#000;}*/
+
 /* Resume
 #resumeBox{font-size:1.0em;line-height:1.5em;color:#000}
 #resumeBox .resumePdf{float:right;margin:30px 0;width:190px;}
