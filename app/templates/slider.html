@@ -1,17 +1,15 @@
-			<div id="slider-box">
+			<div class="container-fluid slider-box" ng-mouseenter="pause()" ng-mouseleave="backToRotate()">
 				<div class="slider">
-					<div class="slider-wrapper">
-						<ul>
-							<li ng-repeat="slide in slider.demoSlides">
-								<img ng-src="{{slide.src}}" alt="">
-							</li>
-						</ul>
-					</div>
-					<span class="prev"></span>
-					<span class="next"></span>
-					<span class="description">
-						<strong>This are my last works</strong> 
-						<strong>look it all in my portfolio</strong>
+					<ul class="slides">
+						<li class="slide" ng-repeat="slide in demoSlides">
+							<img ng-src="{{slide.src}}" alt="">
+						</li>
+					</ul>
+					<span class="slide-prev" ng-click="rotate(true)"></span>
+					<span class="slide-next" ng-click="rotate()"></span>
+					<span class="slide-description">
+						<p class="slide-description-header">These are my last works</p> 
+						<p class="slide-description-text">check other, in my <a href="#/portfolio">portfolio</a></p>
 					</span>
 				</div>
 			</div>

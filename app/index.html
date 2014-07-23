@@ -2,26 +2,48 @@
 <html lang="en" ng-app="luckyApp">
 <head>
   <meta charset="utf-8">
-  <title>Percona test</title>
+  <title>LuckyMallet</title>
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="css/lucky-style.css">
 </head>
 <body>
-  <header>
-    <hgroup>
-      <h1>LuckyMallet <br /> workshop</h1>
-      <h2>web development</h2>
-    </hgroup>	
-  </header>
-  <div ng-view></div>
-  <script src="bower_components/angular/angular.js"></script>
-  <script src="bower_components/angular-route/angular-route.js"></script>
+
+    <header id="page-header" class="container">
+      <hgroup>
+        <h1>LuckyMallet</h1>
+        <h2>web development</h2>
+      </hgroup>	
+    </header>
+	
+    <div id="page-content" ng-view></div>
+	
+
+    <footer id="page-footer" class="container-fluid">
+	  <div class="container">
+	    <div class="row">
+		  <div class="col-xs-6 footer-copyright" ng-controller="CopyrightCtrl">
+			<p>© 2009-{{curentYear}} Alisher Khodzhaev.</p>
+			<p>All rights reserved.</p>
+		  </div>
+			
+		  <div class="col-xs-6 footer-logo text-right">
+			<a href="#!home" title="Back to LuckyMallet workshop web development" >
+			  <!-- <img src="http://luckymallet.ru/images/2dlogo.png"> !-->
+			  <span>luckymallet<strong>.ru</strong></span>
+			</a>
+		  </div>
+		</div>
+	  </div>
+    </footer>
+  
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="bower_components/angular-route/angular-route.min.js"></script>
   <script src="js/app.js"></script>
-  <!-- <script src="js/services.js"></script>  -->
-  <!-- <script src="js/controllers.js"></script>  -->
-  <!-- <script src="js/filters.js"></script>  -->
+  <script src="js/controllers.js"></script>
   <script src="js/directives.js"></script>
-  <!-- Google counter -->
+  <!-- <script src="js/filters.js"></script>  -->
+  <!-- Google counter 
   <script type="text/javascript">
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-27443866-1']);
@@ -32,12 +54,12 @@
 	  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 	  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
-  </script>
-  <!-- Yandex.Metrika counter -->
+  </script> -->
+  <!-- Yandex.Metrika counter
   <script src="//mc.yandex.ru/metrika/watch.js" type="text/javascript"></script>
   <script type="text/javascript">
     try { var yaCounter11125183 = new Ya.Metrika({id:11125183, enableAll: true});}
     catch(e) { }
-  </script> 
+  </script>   -->
 </body>
 </html>
